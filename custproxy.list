@@ -1,0 +1,26 @@
+# (matser_proxy)
+# > notion
+DOMAIN-SUFFIX,notion.so
+DOMAIN,scholar.google.com
+DOMAIN,api.cdnbye.com
+DOMAIN-KEYWORD,notion
+DOMAIN-KEYWORD,nfmovies
+DOMAIN-SUFFIX,intercom.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,segment.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,hostloc.com
+DOMAIN-SUFFIX,us-west-2.amazonaws.com
+DOMAIN-SUFFIX,svc.ms
+# > sci
+DOMAIN-KEYWORD,sci-hub
+# > onenote
+DOMAIN-SUFFIX,onenote.com
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,live.net
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,blob.core.windows.net
+

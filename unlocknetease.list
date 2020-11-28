@@ -1,0 +1,145 @@
+#http://potfile.com/wp-content/uploads/2020/01/neteaseunlock_surge.conf_.txt
+# Surge PAC Rules (Demo)
+# Last modified: 22 Jan, 2020 
+# encoding of this file: utf8 (with BOM)
+DOMAIN-SUFFIX,music.126.com
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,music.126.net
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,api.iplay.163.com
+IP-CIDR,45.254.48.1/32
+IP-CIDR,47.100.127.239/32
+IP-CIDR,59.111.128.0/17
+IP-CIDR,101.71.154.241/32
+IP-CIDR,115.236.112.0/20
+IP-CIDR,193.112.159.225/32
+IP-CIDR,223.252.192.0/19
+##### 通用规则 #####
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,api.iplay.163.com
+DOMAIN-SUFFIX,apm.music.163.com
+DOMAIN-SUFFIX,apm3.music.163.com
+DOMAIN-SUFFIX,interface.music.163.com
+DOMAIN-SUFFIX,interface3.music.163.com
+DOMAIN-SUFFIX,mam.netease.com
+DOMAIN-SUFFIX,hz.netease.com
+##### 无法捕获的规则 #####
+##### 网易云音乐解锁相关CIDR规则 #####
+IP-CIDR,39.105.63.80/32
+IP-CIDR,47.100.127.239/32
+IP-CIDR,59.111.21.14/31
+IP-CIDR,59.111.179.214/32
+IP-CIDR,115.236.118.33/32
+IP-CIDR,59.111.181.38/32
+IP-CIDR,59.111.181.60/32
+IP-CIDR,59.111.160.195/32
+IP-CIDR,59.111.160.197/32
+IP-CIDR,59.111.181.35/32
+IP-CIDR,59.111.238.29/32
+IP-CIDR,115.236.118.33/32
+IP-CIDR,115.236.121.1/32
+IP-CIDR,118.24.63.156/32
+IP-CIDR,193.112.159.225/32
+IP-CIDR,223.252.199.66/32
+IP-CIDR,223.252.199.67/32
+# > NeteaseMusic
+DOMAIN-SUFFIX,music.126.net
+IP-CIDR,45.254.48.1/32
+IP-CIDR,59.111.128.0/17
+IP-CIDR,101.71.154.241/32
+IP-CIDR,115.236.112.0/20
+IP-CIDR,223.252.192.0/19
+##### 网易云音乐解锁相关域名规则 #####
+# DOMAIN-SUFFIX,music.126.net,DIRECT
+# DOMAIN-SUFFIX,126.net
+# DOMAIN-SUFFIX,music.163.com
+# DOMAIN-SUFFIX,api.iplay.163.com
+# DOMAIN-SUFFIX,apm.music.163.com
+# DOMAIN-SUFFIX,apm3.music.163.com
+# DOMAIN-SUFFIX,interface.music.163.com
+# DOMAIN-SUFFIX,interface3.music.163.com
+# DOMAIN-SUFFIX,mam.netease.com
+# DOMAIN-SUFFIX,hz.netease.com
+
+# 正常情况下Mac电脑端网易云只需要开启上面的域名规则就能听全部资源(且不用配置endpoint，但要配置证书信任)。
+# 如果要用Surge给移动端做二重代理，或者自身用上面的配置有问题的时候，需要开endpoint，再看情况开启下面的IP-CIDR和URL-REGEX规则
+
+##### 网易云音乐解锁相关URL规则 #####
+##### 这个正常情况下不用开启 #####
+# URL-REGEX,/eapi/v1/artist
+# URL-REGEX,/eapi/v1/album
+# URL-REGEX,/eapi/v1/search/get
+# URL-REGEX,/eapi/v1/play/
+# URL-REGEX,/eapi/v1/playlist/
+# URL-REGEX,/eapi/v3/playlist/
+# URL-REGEX,/eapi/v3/song/detail
+# URL-REGEX,/eapi/v6/playlist/
+# URL-REGEX,/eapi/batch
+# URL-REGEX,/eapi/cloudsearch/pc
+# URL-REGEX,/eapi/playlist/
+# URL-REGEX,/eapi/artist/
+# URL-REGEX,/eapi/album/
+# URL-REGEX,/eapi/song/
+# URL-REGEX,/eapi/music/
+# URL-REGEX,/eapi/usersafe/
+# URL-REGEX,/eapi/mlivestream/
+# URL-REGEX,/eapi/search/
+# URL-REGEX,/eapi/playlist/
+# URL-REGEX,/eapi/sub/artist/
+# URL-REGEX,/eapi/mlog/
+# URL-REGEX,/eapi/ios/version,DIRECT
+# URL-REGEX,/eapi/homepage/,DIRECT
+# URL-REGEX,/eapi/user/pretend/info,DIRECT
+# URL-REGEX,/api/sp/flow/,DIRECT
+# URL-REGEX,/eapi/grayscale/version/,DIRECT
+# URL-REGEX,/store/eapi/entryconfig,DIRECT
+# URL-REGEX,/eapi/nmusician/artistread/info,DIRECT
+# URL-REGEX,/store/eapi/webconfig,DIRECT
+# URL-REGEX,/eapi/skin/thumbnail/get,DIRECT
+# URL-REGEX,/eapi/v1/user/info,DIRECT
+# URL-REGEX,/eapi/batch,DIRECT
+# URL-REGEX,/eapi/resniche/commontext/,DIRECT
+# URL-REGEX,/eapi/nuser/,DIRECT
+# URL-REGEX,/eapi/share/,DIRECT
+# URL-REGEX,/eapi/blacklist/,DIRECT
+# URL-REGEX,/eapi/toplist/,DIRECT
+# URL-REGEX,/eapi/comment/,DIRECT
+# URL-REGEX,/eapi/user/,DIRECT
+# URL-REGEX,/eapi/appcustomconfig/,DIRECT
+# URL-REGEX,/eapi/event/,DIRECT
+# URL-REGEX,/eapi/comment/,DIRECT
+# URL-REGEX,/eapi/resniche/,DIRECT
+# URL-REGEX,/eapi/hot/,DIRECT
+# URL-REGEX,/eapi/banner/,DIRECT
+# URL-REGEX,/eapi/resource-exposure/,DIRECT
+# URL-REGEX,/eapi/pl/count,DIRECT
+# URL-REGEX,/eapi/resource/,DIRECT
+# URL-REGEX,/httpdns/v2/d?DOMAIN,DIRECT
+
+##### 禁止网易云音乐上报记录相关URL规则 #####
+##### 不知道会不会影响你的个性推荐啊？如果担心的话可以把REJECT改成DIRECT #####
+# URL-REGEX,/api/feedback/client/log,REJECT
+# URL-REGEX,/eapi/mlog/songplay/entrance,REJECT
+# URL-REGEX,/api/log/mam/upload,REJECT
+# URL-REGEX,/eapi/ad/,REJECT
+
+##### 网易云音乐解锁相关CIDR规则 #####
+##### 这个列表可能不全，所以这个是[下下策] #####
+
+# IP-CIDR,39.105.63.80/32
+# IP-CIDR,47.100.127.239/32
+# IP-CIDR,59.111.21.14/31
+# IP-CIDR,59.111.179.214/32
+# IP-CIDR,115.236.118.33/32
+# IP-CIDR,59.111.181.38/32
+# IP-CIDR,59.111.181.60/32
+# IP-CIDR,59.111.160.195/32
+# IP-CIDR,59.111.160.197/32
+# IP-CIDR,59.111.181.35/32
+# IP-CIDR,59.111.238.29/32
+# IP-CIDR,115.236.118.33/32
+# IP-CIDR,115.236.121.1/32
+# IP-CIDR,118.24.63.156/32
+# IP-CIDR,193.112.159.225/32
+# IP-CIDR,223.252.199.66/32
+# IP-CIDR,223.252.199.67/32
