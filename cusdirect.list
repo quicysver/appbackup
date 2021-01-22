@@ -1,6 +1,6 @@
 # (SCI)
 DOMAIN-KEYWORD,webofknowledge
-DOMAIN-KEYWORD,cn-ki.net
+DOMAIN-KEYWORD,cn-ki
 DOMAIN-KEYWORD,cnki
 DOMAIN-KEYWORD,wanfangdata
 DOMAIN-KEYWORD,pkulaw
@@ -8,6 +8,7 @@ DOMAIN-KEYWORD,westlawchina
 DOMAIN-KEYWORD,iop
 DOMAIN-KEYWORD,journal
 DOMAIN-SUFFIX,cnki.net
+DOMAIN-SUFFIX,cn-ki.net
 DOMAIN-SUFFIX,researchgate.net
 DOMAIN-SUFFIX,springer.com
 DOMAIN-SUFFIX,blackwell-synergy.com
